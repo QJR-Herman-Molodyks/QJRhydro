@@ -1,3 +1,3 @@
-# QJRhydro - Integrated Operating Shell
+# QJRhydro - Integrated Operating Shell with high functionality!
 
-> Documentation: Documentation/main
+> Documentation and more info will be soon (now is only a code)
