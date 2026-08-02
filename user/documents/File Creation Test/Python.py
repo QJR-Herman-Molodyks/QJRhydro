@@ -1,2 +1,0 @@
-# QJR Python file
-

@@ -1,0 +1,8 @@
+{
+    "gemini": {
+        "api_key": ""
+    },
+    "huggingface": {
+        "token": ""
+    }
+}

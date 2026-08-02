@@ -13,7 +13,7 @@ def open_info(parent):
     # Текстове поле
     viewer = QTextEdit()
     viewer.setReadOnly(True)
-    viewer.setText(f"Q-J-R Hydro v5.2.1\nCore (Kernel) Q-J-R version: 6.5.2\n\n(C) Copyright Q-J-R System Development 2019-2026\nSoftware has fully open source code and is completely free to use!\n(MIT License)")
+    viewer.setText(f"Q-J-R Hydro v5.2.2\nCore (Kernel) Q-J-R version: 6.7.0\n\n(C) Copyright Q-J-R System Development 2019-2026\nSoftware has fully open source code and is completely free to use!\n(MIT License)")
     layout.addWidget(viewer)
 
     # Кнопка закриття
