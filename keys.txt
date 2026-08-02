@@ -1,0 +1,7 @@
+file_manager
+notepad
+calendar
+mail
+settings
+calculator
+dashboard

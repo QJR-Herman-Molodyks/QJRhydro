@@ -1,0 +1,32 @@
+[
+    {
+        "name": "File Manager",
+        "app_id": "filemgr",
+        "icon": "icons/filemgr_new.png"
+    },
+    {
+        "name": "Storage",
+        "app_id": "storage",
+        "icon": "icons/storage_new.png"
+    },
+    {
+        "name": "Console",
+        "app_id": "console_term",
+        "icon": "icons/console.png"
+    },
+    {
+        "name": "Notepad",
+        "app_id": "notepad",
+        "icon": "icons/notepad_middle.png"
+    },
+    {
+        "name": "Calculator",
+        "app_id": "calculator",
+        "icon": "icons/calc.png"
+    },
+    {
+        "name": "Calendar",
+        "app_id": "calendar",
+        "icon": "icons/calendar.png"
+    }
+]

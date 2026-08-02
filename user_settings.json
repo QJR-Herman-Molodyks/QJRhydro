@@ -1,0 +1,16 @@
+{
+    "general": {
+        "fullscreen": true,
+        "resolution": "auto",
+        "font_size": 12
+    },
+    "file_manager": {
+        "icon_size": 32,
+        "spacing": 1,
+        "view_mode": "list"
+    },
+    "appearance": {
+        "visualizer": true,
+        "theme": "SystemMagenta"
+    }
+}

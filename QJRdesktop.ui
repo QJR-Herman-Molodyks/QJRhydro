@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QJRDesktop</class>
+
+ <widget class="QMainWindow" name="QJRDesktop">
+  <property name="windowTitle">
+   <string>QJR Desktop</string>
+  </property>
+
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>800</height>
+   </rect>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+
+    <!-- LEFT: SPHERES -->
+    <item>
+     <widget class="QFrame" name="spheresPanel">
+      <property name="minimumWidth">
+       <number>220</number>
+      </property>
+      <property name="maximumWidth">
+       <number>260</number>
+      </property>
+
+      <property name="styleSheet">
+       <string>
+QFrame {
+ background-color: #121212;
+ border: 1px solid #2a2a2a;
+}
+       </string>
+      </property>
+
+      <layout class="QVBoxLayout" name="spheresLayout">
+
+       <item>
+        <widget class="QLabel" name="spheresTitle">
+         <property name="text">
+          <string>QJR Devices and Spheres</string>
+         </property>
+
+         <property name="alignment">
+          <enum>Qt::AlignCenter</enum>
+         </property>
+
+         <property name="styleSheet">
+          <string>color: white; font-weight: bold;</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QListWidget" name="spheresList">
+         <property name="styleSheet">
+          <string>
+QListWidget {
+ background: transparent;
+ color: white;
+}
+          </string>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+
+    <!-- CENTER COLUMN -->
+    <item>
+     <layout class="QVBoxLayout" name="desktopColumn">
+
+      <!-- DESKTOP -->
+      <item>
+       <widget class="QListWidget" name="desktop">
+
+        <property name="viewMode">
+         <enum>QListView::IconMode</enum>
+        </property>
+
+        <property name="movement">
+         <enum>QListView::Free</enum>
+        </property>
+
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::InternalMove</enum>
+        </property>
+
+        <property name="resizeMode">
+         <enum>QListView::Adjust</enum>
+        </property>
+
+        <property name="iconSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+
+        <property name="spacing">
+         <number>20</number>
+        </property>
+
+        <property name="styleSheet">
+         <string>
+QListWidget {
+ background-color: #0b0b0b;
+ color: white;
+}
+         </string>
+        </property>
+
+       </widget>
+      </item>
+
+
+      <!-- QUICK OPEN PANEL -->
+      <item>
+       <widget class="QFrame" name="quickOpenPanel">
+
+        <property name="minimumHeight">
+         <number>70</number>
+        </property>
+
+        <property name="maximumHeight">
+         <number>90</number>
+        </property>
+
+        <property name="styleSheet">
+         <string>
+QFrame {
+ background-color: #151515;
+ border-top: 1px solid #2a2a2a;
+}
+         </string>
+        </property>
+
+        <layout class="QHBoxLayout" name="quickOpenLayout">
+
+         <item>
+          <widget class="QListWidget" name="quickOpenList">
+
+           <property name="viewMode">
+            <enum>QListView::IconMode</enum>
+           </property>
+
+           <property name="movement">
+            <enum>QListView::Static</enum>
+           </property>
+
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+
+           <property name="spacing">
+            <number>12</number>
+           </property>
+
+           <property name="styleSheet">
+            <string>
+QListWidget {
+ background: transparent;
+ color: white;
+}
+            </string>
+           </property>
+
+          </widget>
+         </item>
+
+        </layout>
+
+       </widget>
+      </item>
+
+     </layout>
+    </item>
+
+
+    <!-- RIGHT: DASHBOARD -->
+    <item>
+     <widget class="QFrame" name="dashboardPanel">
+
+      <property name="minimumWidth">
+       <number>320</number>
+      </property>
+
+      <property name="maximumWidth">
+       <number>380</number>
+      </property>
+
+      <property name="styleSheet">
+       <string>
+QFrame {
+ background-color: #1a1a1a;
+ border: 1px solid #2a2a2a;
+}
+       </string>
+      </property>
+
+      <layout class="QVBoxLayout" name="dashboardLayout">
+       <property name="alignment">
+        <enum>Qt::AlignTop</enum>
+       </property>
+
+       <!-- TIME -->
+       <item>
+        <widget class="QLabel" name="dashboardTime">
+         <property name="text">
+          <string>00:00</string>
+         </property>
+
+         <property name="alignment">
+          <enum>Qt::AlignCenter</enum>
+         </property>
+
+         <property name="styleSheet">
+          <string>
+QLabel {
+ color: white;
+ font-family: Consolas;
+ font-size: 48px;
+ font-weight: bold;
+}
+          </string>
+         </property>
+        </widget>
+       </item>
+
+       <!-- DATE -->
+       <item>
+        <widget class="QLabel" name="dashboardDate">
+         <property name="text">
+          <string>Monday, 01 January</string>
+         </property>
+
+         <property name="alignment">
+          <enum>Qt::AlignCenter</enum>
+         </property>
+
+         <property name="styleSheet">
+          <string>
+QLabel {
+ color: #bbbbbb;
+ font-family: Consolas;
+ font-size: 16px;
+}
+          </string>
+         </property>
+        </widget>
+       </item>
+
+       <!-- WEATHER -->
+       <item>
+        <widget class="QLabel" name="weatherLabel">
+         <property name="text">
+          <string>Weather: -- °C</string>
+         </property>
+         <property name="styleSheet">
+          <string>color: white;</string>
+         </property>
+        </widget>
+       </item>
+
+       <!-- BATTERY -->
+       <item>
+        <widget class="QLabel" name="batteryLabel">
+         <property name="text">
+          <string>Battery: --%</string>
+         </property>
+         <property name="styleSheet">
+          <string>color: white;</string>
+         </property>
+        </widget>
+       </item>
+
+       <!-- NETWORK -->
+       <item>
+        <widget class="QLabel" name="networkLabel">
+         <property name="text">
+          <string>🛜 Network: --</string>
+         </property>
+         <property name="styleSheet">
+          <string>color: white;</string>
+         </property>
+        </widget>
+       </item>
+
+       <!-- CALENDAR -->
+       <item>
+        <widget class="QCalendarWidget" name="calendar">
+         <property name="styleSheet">
+          <string>color: white;</string>
+         </property>
+<!--         <property name="locale">-->
+<!--          <locale language="Ukrainian" country="Ukraine"/>-->
+<!--         </property>-->
+        </widget>
+       </item>
+
+       <!-- BUTTON -->
+       <item>
+        <widget class="QPushButton" name="btnToday">
+         <property name="text">
+          <string>Today</string>
+         </property>
+
+         <property name="styleSheet">
+          <string>
+QPushButton {
+ background-color: #2a2a2a;
+ color: white;
+ padding: 6px;
+ border-radius: 6px;
+}
+QPushButton:hover {
+ background-color: #3a3a3a;
+}
+          </string>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>
