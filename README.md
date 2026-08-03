@@ -10,12 +10,13 @@
 4. File Manager
 5. AI
 6. Calendar
-7. Image Viewer
-8. Media Player
-9. Video Player
-10. Console (Terminal)
-11. Zip-archive Manager
-12. Settings
+7. System Info
+8. Image Viewer
+9. Media Player
+10. Video Player
+11. Console (Terminal)
+12. Zip-archive Manager
+13. Settings
 
 ### Included SPECIAL Features:
 
@@ -45,3 +46,6 @@
 #### AI 
 11. PhotoSave
 12. KeyControl
+
+#### System Info
+13. KernelTrack
